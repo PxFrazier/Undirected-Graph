@@ -1,16 +1,3 @@
-class Node
-{
-    constructor(data)
-    {
-        this.data = data;
-    }
-
-    printNodeInfo()
-    {
-        console.log(this.data);
-    }
-}
-
 class Undirected_Graph
 {   
     constructor()
@@ -46,15 +33,3 @@ class Undirected_Graph
         console.log(this.graph);
     }
 }
-
-const myGraph = new Undirected_Graph();
-
-myGraph.addNode(0, node_one = new Node(1), node_two = new Node(2), node_three = new Node(3));
-myGraph.addNode(1, node_zero = new Node(0));
-myGraph.addNode(2, node_zero);
-myGraph.addNode(3, node_zero);
-
-myGraph.print();
-
-console.log(myGraph.isAdjacent(0, node_one));
-Array.from(myGraph.getAt(0))[0].printNodeInfo();
